@@ -1,7 +1,5 @@
 <?php
 // Captcha section
-session_start();
-$page_count;
 
 $code=rand(10000,99999);
 $_SESSION["code"]=$code;

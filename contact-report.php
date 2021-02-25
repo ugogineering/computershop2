@@ -1,6 +1,5 @@
 <?php
-session_start();
-$page_count;
+
 
 ?>
 <!DOCTYPE html>
@@ -34,16 +33,7 @@ body, html {
     $(".rslides").responsiveSlides();
   });
 </script>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-74701440-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
 <link href="images/responsiveslides.css" rel="stylesheet" type="text/css">
 <body>
 
@@ -79,10 +69,7 @@ if(isset($_POST["captcha"])&& $_POST["captcha"] != "" && $_SESSION["code"] == $_
 
 	$message = $_POST['message'];
 	$email = $_POST['email'];
-	// $ownermail = "ugo@caseray.com.ng";
-
-
-	$mailassist = "webmailassist@gmail.com";
+	$destinationmail = "destination@example.com";
 
 	$fullname = $_POST['fullname'];
 	$company = $_POST['company'];
@@ -90,7 +77,7 @@ if(isset($_POST["captcha"])&& $_POST["captcha"] != "" && $_SESSION["code"] == $_
 	$phone = $_POST['phone'];
 
 
-		$headers = "From: Client Name <info@caseray.com.ng>";
+		$headers = "From: Client Name <info@example.com>";
 
 		$mailmessage = "Message:	$message\r\n
 					Sender Details:\r\n
@@ -102,16 +89,12 @@ if(isset($_POST["captcha"])&& $_POST["captcha"] != "" && $_SESSION["code"] == $_
 					Telephone: $phone\r\n";
 
 
-		// $mail = mail($ownermail,  "message from Client Name $fullname $email $company", $mailmessage, $headers);
-
-		$mail = mail($mailassist,  "message from Client Name $fullname $email $company", $mailmessage, $headers);
+		$mail = mail($destinationmail,  "message from Client Name $fullname $email $company", $mailmessage, $headers);
 
 
-		$mail = mail($email,  "A copy of the message you submitted at www.caseray.com.ng", $mailmessage, $headers);
 
 		if($mail){
-			echo("<p align=\"justify\"><strong> Thank you " . "$fullname" . " ". "Your message has been received.
-			<br>A copy of your message was also sent to $email</strong></p>");
+			echo("<p align=\"justify\"><strong> Thank you " . "$fullname" . " ". "Your message has been received.</p>");
 
 		} else {
 			echo("<p align=\"justify\">Error sending your message </p>");
@@ -190,7 +173,7 @@ function openMenu(evt, menuName) {
 }
 document.getElementById("myLink").click();
 </script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=YourKeyHere"></script>
 <!--
 To use this code on your website, get a free API key from Google.
 Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp

@@ -1,6 +1,4 @@
 <?php
-session_start();
-$page_count;
 
 ?>
 <!DOCTYPE html>
@@ -46,16 +44,7 @@ body, html {
     $(".rslides").responsiveSlides();
   });
 </script>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-74701440-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
 <link href="images/responsiveslides.css" rel="stylesheet" type="text/css">
 <body>
 
@@ -108,17 +97,7 @@ body, html {
     <img src="images/001tech_01.png" style="width:100%;max-width:1000px" class="w3-margin-top" alt="We equip computer laboratories in Nigeria">
     <p><strong>Opening hours:</strong> Monday - Friday from 9am to 5pm.</p>
     <p><strong>Address:</strong>Computer Village, Ikeja, Lagos</p>
-      <div> <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
-          <ins class="adsbygoogle"
-            style="display:block"
-            data-ad-client="ca-pub-7675718949738531"
-            data-ad-slot="1550625800"
-            data-ad-format="auto"></ins>
-            <script>
-              (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>
-          </div>
   </div>
 </div>
 
@@ -152,17 +131,7 @@ body, html {
 
   </div>
 
-  <div> <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
-      <ins class="adsbygoogle"
-        style="display:block"
-        data-ad-client="ca-pub-7675718949738531"
-        data-ad-slot="1550625800"
-        data-ad-format="auto"></ins>
-        <script>
-          (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
-      </div>
 </div>
 
 <!-- Menu Container -->
@@ -215,7 +184,7 @@ body, html {
     </div>
     <img src="images/001tech_01.png" style="width:100%;max-width:1000px" class="w3-margin-top" alt="We equip computer laboratories in Nigeria">
   </div>
-  
+
 </div>
 
 <!-- Contact/Area Container -->
@@ -308,7 +277,7 @@ function openMenu(evt, menuName) {
 }
 document.getElementById("myLink").click();
 </script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCOLEPxjRmzW_1z4x3NU9CeVr_eFSi324g&callback=myMap"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=YourKeyHere"></script>
 <!--
 To use this code on your website, get a free API key from Google.
 Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
